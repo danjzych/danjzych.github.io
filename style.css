@@ -1,0 +1,33 @@
+/*Global  styles and colors. Colors generated via coolors.co color palette genarator */
+:root {
+  --eggplant: #52414C;
+  --ebony: #596157;
+  --seagreen: #5B8C5A;
+  --citron: #CFD186;
+  --bittersweet: #E3655B;
+}
+
+html {
+  font-size: 16px;
+  color: var(--citron);
+  font-family: 'Rubik', sans-serif;
+  text-align: center;
+  width: 100%;
+  background-image: linear-gradient(to right, var(--eggplant), var(--bittersweet))
+}
+
+/*header styles */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 4rem;
+  width: 100%;
+}
+
+header h1 {
+  font-size: 3.5rem;
+  background: -webkit-linear-gradient(var(--citron), var(--bittersweet));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
