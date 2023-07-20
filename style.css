@@ -31,3 +31,26 @@ header h1 {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+header a {
+  text-decoration: none;
+}
+
+header a:hover {
+  opacity: 0.5;
+}
+
+header a:active {
+  color: var(--eggplant);
+  text-decoration: none;
+}
+
+nav a {
+  font-size: 1.25rem;
+  color: var(--citron);
+  padding-right: 1.5rem;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
