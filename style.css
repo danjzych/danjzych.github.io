@@ -1,19 +1,24 @@
 /*Global  styles and colors. Colors generated via coolors.co color palette genarator */
 :root {
-  --eggplant: #52414C;
-  --ebony: #596157;
-  --seagreen: #5B8C5A;
-  --citron: #CFD186;
-  --bittersweet: #E3655B;
+  --gunmetal: #31393C;
+  --crayolablue: #2176FF;
+  --celestialblue: #33A1FD;
+  --sunglow: #FDCA40;
+  --carrot: #F79824;
 }
 
 html {
   font-size: 16px;
-  color: var(--citron);
+  color: var(--gunmetal);
   font-family: 'Rubik', sans-serif;
   text-align: center;
   width: 100%;
-  background-image: linear-gradient(to right, var(--eggplant), var(--bittersweet))
+  background-image: linear-gradient(to right, var(--crayolablue), var(--celestialblue))
+}
+
+.grid-container {
+  display: grid;
+
 }
 
 /*header styles */
@@ -27,7 +32,7 @@ header {
 
 header h1 {
   font-size: 3.5rem;
-  background: -webkit-linear-gradient(var(--citron), var(--bittersweet));
+  background: -webkit-linear-gradient(var(--sunglow), var(--carrot));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -41,16 +46,18 @@ header a:hover {
 }
 
 header a:active {
-  color: var(--eggplant);
+  color: var(--gunmetal);
   text-decoration: none;
 }
 
 nav a {
   font-size: 1.25rem;
-  color: var(--citron);
+  color: var(--gunmetal);
   padding-right: 1.5rem;
 }
 
 nav a:hover {
   text-decoration: underline;
 }
+
+/* landing page styles */
