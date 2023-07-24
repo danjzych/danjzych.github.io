@@ -28,6 +28,14 @@ span {
   -webkit-text-fill-color: transparent;
 }
 
+a:hover {
+  opacity: 0.5;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
 .grid {
   grid-template: repeat(7, 1fr) / 1fr;
 }
@@ -42,6 +50,10 @@ span {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+}
+
+.text-glow {
+  text-shadow: .5px .5px 1px var(--sunglow);
 }
 
 footer {
@@ -67,7 +79,7 @@ header a {
 }
 
 header a:hover {
-  opacity: 0.5;
+  text-decoration: none;
 }
 
 header a:active {
@@ -79,10 +91,6 @@ nav a {
   font-size: 1.25rem;
   color: var(--gunmetal);
   padding-right: 1.5rem;
-}
-
-nav a:hover {
-  text-decoration: underline;
 }
 
 /* main section styles */
@@ -97,4 +105,38 @@ main div {
 
 main a {
   color: var(--gunmetal);
+}
+
+.projects {
+  align-items: flex-start;
+}
+
+.overflow-scroll {
+  overflow-y: scroll;
+}
+
+li {
+  list-style-type: none;
+}
+
+li a {
+  text-decoration: none;
+}
+
+li a:active {
+  color: var(--gunmetal);
+  text-decoration: none;
+}
+
+li h3 {
+  margin: 1remrem 0rem .5rem 0rem;
+}
+
+li p {
+  margin: .4rem 0rem;
+}
+
+li h6 {
+  margin: .4rem 0rem 1rem 0rem;
+  font-style: italic;
 }
