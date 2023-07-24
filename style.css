@@ -16,18 +16,43 @@ html {
   background-image: linear-gradient(to right, var(--crayolablue), var(--celestialblue))
 }
 
-.grid-container {
+body {
+  margin: 0;
   display: grid;
+  height: 100vh;
+}
 
+span {
+  background: -webkit-linear-gradient(var(--sunglow), var(--carrot));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.grid {
+  grid-template: repeat(7, 1fr) / 1fr;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flex-container-evenly {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+footer {
+  grid-area: 7 / 1 / 8/ 1;
+  font-style: italic;
+  opacity: 50%;
 }
 
 /*header styles */
 header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 4rem;
-  width: 100%;
+  grid-area: 1 / 1 / 2 / 1;
 }
 
 header h1 {
@@ -61,3 +86,15 @@ nav a:hover {
 }
 
 /* landing page styles */
+
+main {
+  grid-area: 2 / 1 / 7 / 1;
+}
+
+main div {
+  width: 42.5%;
+}
+
+main a {
+  color: var(--gunmetal);
+}
