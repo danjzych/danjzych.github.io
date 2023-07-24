@@ -30,9 +30,6 @@ span {
 
 a:hover {
   opacity: 0.5;
-}
-
-a:hover {
   text-decoration: underline;
 }
 
@@ -140,9 +137,25 @@ li h6 {
 }
 
 /* resume page styles */
-iframe {
+.resume {
   height: 32rem;
   width: 30rem;
 }
 
-/* music page styles */
+/* contact page styles */
+.contact {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact a {
+  text-decoration: none;
+}
+
+.favicon {
+  height: 32px;
+  width: 32px;
+  padding-right: 1.25rem;
+}
